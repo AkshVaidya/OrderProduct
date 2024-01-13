@@ -19,7 +19,7 @@ router.get("/", checkAuth, (req, res, next) => {
             quantity: doc.quantity,
             request: {
               type: "GET",
-              url: "http://orderproduct.netlify.app/orders/" + doc._id,
+              url: "http://localhost:3000/orders/" + doc._id,
             },
           };
         }),
